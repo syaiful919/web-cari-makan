@@ -12,10 +12,13 @@ const header = document.querySelector("header");
 const logo = document.querySelector(".logo");
 const navItem = document.querySelectorAll(".nav__item a");
 
+let isOpen = false;
+
 menu.addEventListener("click", function (event) {
   drawer.classList.toggle("open");
+  isOpen = true;
   navItem.forEach(function (x) {
-    x.style.color = "black";
+    x.style.color = "#2c3e50";
   });
   event.stopPropagation();
 });
@@ -28,7 +31,6 @@ main.addEventListener("click", function () {
   drawer.classList.remove("open");
 });
 
-
 window.onscroll = function () {
   scrollFunction();
 };
@@ -39,17 +41,19 @@ function scrollFunction() {
     document.documentElement.scrollTop > 100
   ) {
     header.style.backgroundColor = "white";
-    logo.style.color = "black";
-    menu.style.color = "black";
+    logo.style.color = "#2c3e50";
+    menu.style.color = "#2c3e50";
     navItem.forEach(function (x) {
-      x.style.color = "black";
+      x.style.color = "#2c3e50";
     });
   } else {
     header.style.backgroundColor = "transparent";
     logo.style.color = "white";
     menu.style.color = "white";
     navItem.forEach(function (x) {
-      x.style.color = "white";
+      if (!isOpen) {
+        x.style.color = "white";
+      }
     });
   }
 }

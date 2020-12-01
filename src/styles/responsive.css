@@ -27,6 +27,7 @@
     .open {
         -webkit-transform: translateX(0);
         transform: translateX(0);
+        color: #2c3e50;
     }
 
     .nav__list{
