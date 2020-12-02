@@ -1,69 +1,92 @@
-
-
 @media screen and (max-width: 900px) {
-    .header__inner{
-        grid-template-columns: 3fr 2fr;
+  .header__inner {
+    grid-template-columns: 3fr 2fr;
+  }
 
-    }
-
-    .restaurant__wrapper{
-      grid-template-columns: 1fr 1fr ;
-
-    }
+  .restaurant__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .header__inner{
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    
+  .header__inner {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 599px) {
-    .nav {
-        z-index: 20;
-        background-color: #fff;
-        width: 300px;
-        position: fixed;
-        right: 0;
-        top: 63px;
+  .nav {
+    z-index: 20;
+    background-color: #fff;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 60px;
 
-        /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translateX(400px);
-        transform: translateX(400px);
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
 
-        /* Optionally, we animate the drawer. */
-        transition: transform 0.3s ease;
-    }
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
 
-    .open {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        color: #2c3e50;
-    }
+  .open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    color: #2c3e50;
+  }
 
-    .nav__list{
-        display: block;
-        height: 100vh;
-    }
+  .nav__list {
+    display: block;
+    height: 100vh;
+  }
 
-    .nav__item {
-        display: list-item;
-        border-bottom: 1px solid #E0E0E0;
-        width: 100%;
-        text-align: left;
-    }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
 
-    .restaurant__wrapper{
-        grid-template-columns: 1fr ;
-  
-      }
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .section__title {
+    font-size: 36px;
+    margin: 0 auto 32px;
+  }
+  .restaurant__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .taste__image,
+  .location__image {
+    display: none;
+  }
+
+  .taste__content,
+  .location__content {
+    text-align: center;
+  }
+
+  .taste__content button,
+  .location__content button {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .header__menu {
-        display: none;
-    }
+  .header__menu {
+    display: none;
+  }
+
+  #taste {
+    grid-template-columns: 7fr 5fr;
+  }
+
+  #location {
+    grid-template-columns: 5fr 7fr;
+  }
 }

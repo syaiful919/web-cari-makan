@@ -12,10 +12,11 @@
     />
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <header>
       <div class="header__inner">
         <a href="#" class="logo">Cari Makan</a>
-        <a id="menu" class="header__menu">☰</a>
+        <a id="menu" href="javascript:void(0)" class="header__menu">☰</a>
         <nav id="drawer" class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#">Home</a></li>
@@ -39,9 +40,39 @@
         </p>
       </div>
     </div>
-    <main>
+    <main id="maincontent">
+      <section id="taste">
+        <article class="taste__content">
+          <h2 class="section__title">Cita Rasa Nusantara</h2>
+          <p class="taste__tagline">
+            Nikmati beragam makanan dan minuman khas dari seluruh Nusantara.
+            Jelajahi sekarang juga
+          </p>
+          <button onclick="">Lihat Menu</button>
+        </article>
+        <img
+          class="taste__image"
+          src="../images/food.png"
+          alt="Ilustrasi makanan Nusantara"
+        />
+      </section>
+      <section id="location">
+        <img
+          class="location__image"
+          src="../images/city.png"
+          alt="Ilustrasi lokasi"
+        />
+        <article class="location__content">
+          <h2 class="section__title">Tersebar di Seluruh Indonesia</h2>
+          <p class="location__tagline">
+            Kami hadir di lebih dari 1000 kota di seluruh Indonesia. Jika anda
+            mencari kami, kami ada dimana-mana
+          </p>
+          <button onclick="">Lihat Kota</button>
+        </article>
+      </section>
       <section id="restaurants">
-        <h2 class="section__title">Explore Tempat Makan</h2>
+        <h2 class="section__title">Tempat Makan Populer</h2>
         <div class="restaurant__wrapper">
           <article class="restaurant__item">
             <div class="restaurant-item__thumbnail">
@@ -50,14 +81,16 @@
                 alt="Gambar Bring Your Phone Cafe"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Bring Your Phone Cafe</h3>
+                <a href="" class="restaurant-item__title"
+                  >Bring Your Phone Cafe</a
+                >
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Medan</h4>
                   <div class="restaurant-item__rating">⭐ 4.6</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -70,7 +103,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -80,14 +113,14 @@
                 alt="Gambar Run The Gun"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Run The Gun</h3>
+                <a href="" class="restaurant-item__title">Run The Gun</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Bali</h4>
                   <div class="restaurant-item__rating">⭐ 4.6</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -100,7 +133,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -110,14 +143,14 @@
                 alt="Gambar Pangsit Express"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Pangsit Express</h3>
+                <a href="" class="restaurant-item__title">Pangsit Express</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Ternate</h4>
                   <div class="restaurant-item__rating">⭐ 4.8</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -130,7 +163,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -140,14 +173,14 @@
                 alt="Gambar Ducky Duck"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Ducky Duck</h3>
+                <a href="" class="restaurant-item__title">Ducky Duck</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Malang</h4>
                   <div class="restaurant-item__rating">⭐ 4.7</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -160,7 +193,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -170,14 +203,14 @@
                 alt="Gambar Kafein"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Kafein</h3>
+                <a href="" class="restaurant-item__title">Kafein</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Bali</h4>
                   <div class="restaurant-item__rating">⭐ 3.8</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -190,7 +223,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -200,14 +233,14 @@
                 alt="Gambar Makan mudah"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Makan mudah</h3>
+                <a href="" class="restaurant-item__title">Makan mudah</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Malang</h4>
                   <div class="restaurant-item__rating">⭐ 4.6</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -220,7 +253,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -230,14 +263,14 @@
                 alt="Gambar Saya Suka"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Saya Suka</h3>
+                <a href="" class="restaurant-item__title">Saya Suka</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Surabaya</h4>
                   <div class="restaurant-item__rating">⭐ 3.6</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -250,7 +283,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -260,14 +293,14 @@
                 alt="Gambar Gigitan Cepat"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Gigitan Cepat</h3>
+                <a href="" class="restaurant-item__title">Gigitan Cepat</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Aceh</h4>
                   <div class="restaurant-item__rating">⭐ 4</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -280,7 +313,7 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
 
           <article class="restaurant__item">
@@ -290,14 +323,14 @@
                 alt="Gambar Fairy Cafe"
               />
               <div class="restaurant-item__main">
-                <h3 class="restaurant-item__title">Fairy Cafe</h3>
+                <a href="" class="restaurant-item__title">Fairy Cafe</a>
                 <div class="restaurant-item__subtitle">
                   <h4 class="restaurant-item__city">Malang</h4>
                   <div class="restaurant-item__rating">⭐ 3.9</div>
                 </div>
               </div>
             </div>
-            <div class="restaurant-item__description">
+            <p class="restaurant-item__description">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -310,9 +343,8 @@
               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
               ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra nulla ut metus varius laoreet.
-            </div>
+            </p>
           </article>
-
         </div>
       </section>
     </main>
