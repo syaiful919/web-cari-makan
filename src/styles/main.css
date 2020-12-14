@@ -305,6 +305,7 @@ main {
   height: 200px;
   display: block;
   position: relative;
+  object-fit: cover;
 }
 
 .restaurant-item__main {
