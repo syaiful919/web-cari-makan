@@ -6,6 +6,15 @@
   .restaurant__wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
+  .empty-fav{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .empty-plate{
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 700px) {
