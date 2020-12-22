@@ -7,13 +7,23 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .empty-fav{
+  .empty-fav {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  .empty-plate{
+  .empty-plate {
     width: 50%;
+  }
+
+  .loading__wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .empty-list {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 

@@ -424,3 +424,35 @@ footer {
   font-weight: 500;
   color: #2c3e50;
 }
+
+.loading__wrapper{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.empty-list {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-list__message {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.empty-list__image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 16px;
+}

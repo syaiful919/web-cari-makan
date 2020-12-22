@@ -63,7 +63,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div>
     ${restaurant.customerReviews.map(
     (review) => `<div class="restaurant-detail__review-list">
-    <div class="restaurant-detail__review-list__avatar">${review.name.match(/\b([A-Z])/g).join('')}</div>
+    <div class="restaurant-detail__review-list__avatar">${review.name.toUpperCase().match(/\b([A-Z])/g).join('')}</div>
     <div class="restaurant-detail__review-list__content">
       <p class="restaurant-detail__review-list__name">${review.name}</p>
       <p class="restaurant-detail__review-list__date">${review.date}</p>
@@ -123,10 +123,44 @@ const createEmptyFavTemplate = () => `
   
 `;
 
+const createEmptyDetail = () => `
+<div class="empty-detail">
+  <img 
+      class="empty-detail__image" 
+      src="images/attention.png"
+      alt="perhatian"
+    />
+  <p class="empty-detail__message">Terjadi kesalahan, coba beberapa saat lagi</p>
+</div>
+<div class="behind-appbar"></div>
+`;
+
+const createLoading = () => `
+<div class="loadingio-spinner-rolling-io">
+  <div class="loading-io">
+    <div></div>
+  </div>
+</div>
+`;
+
+const createEmptyList = () => `
+<div class="empty-list">
+  <img 
+      class="empty-list__image" 
+      src="images/attention.png"
+      alt="perhatian"
+    />
+  <p class="empty-list__message">Terjadi kesalahan, coba beberapa saat lagi</p>
+</div>
+`;
+
 export {
   createRestaurantDetailTemplate,
   createRestaurantItemTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
   createEmptyFavTemplate,
+  createEmptyDetail,
+  createLoading,
+  createEmptyList,
 };
