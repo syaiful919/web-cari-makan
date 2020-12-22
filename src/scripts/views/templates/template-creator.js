@@ -101,13 +101,13 @@ const createRestaurantItemTemplate = (restaurant) => `
 
 const createLikeButtonTemplate = () => `
   <button aria-label="tambah ke favorit" id="likeButton" class="like">
-     <i class="fa fa-heart-o" aria-hidden="true"></i>
+    <img width="24" height="24" src="svg/heart_border.svg" alt="tambah ke favorit"/>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
   <button aria-label="hapus dari favorit" id="likeButton" class="like">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <img width="24" height="24" src="svg/heart.svg" alt="hapus dari favorit"/>
   </button>
 `;
 
