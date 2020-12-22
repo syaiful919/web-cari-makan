@@ -2,7 +2,7 @@
 const SkipLinkInitiator = {
   init({ button, content }) {
     button.addEventListener('click', () => {
-      content.tabIndex = 1;
+      content.tabIndex = 0;
       content.focus();
     });
   },

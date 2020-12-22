@@ -25,14 +25,14 @@ const Home = {
       <img
         class="taste__image"
         src="images/food.png"
-        alt="Ilustrasi makanan Nusantara"
+        alt="Makanan nusantara"
       />
     </section>
     <section id="location">
       <img
         class="location__image"
         src="images/city.png"
-        alt="Ilustrasi lokasi"
+        alt="Lokasi"
       />
       <article class="location__content">
         <h2 class="section__title">Tersebar di Seluruh Indonesia</h2>
@@ -54,7 +54,6 @@ const Home = {
 
   async afterRender() {
     const restaurants = await RestaurantSource.restaurants();
-    console.log(restaurants);
     const restaurantsWrapper = document.querySelector('#restaurantsWrapper');
     restaurants.forEach((restaurant) => {
       restaurantsWrapper.innerHTML += createRestaurantItemTemplate(restaurant);

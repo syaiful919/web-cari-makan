@@ -16,6 +16,12 @@ const DrawerInitiator = {
       this._closeDrawer(event, drawer);
     });
 
+    drawerItems.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        this._closeDrawer(event, drawer);
+      });
+    });
+
     window.onscroll = () => {
       this._scrollFunction(button, drawerItems, header, logo);
     };
