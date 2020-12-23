@@ -55,7 +55,9 @@ class RestaurantItem extends HTMLElement {
         }
 
         .restaurant-item__title {
-          font-size: 18px;
+          font-size: 22px;
+          display: block;
+          padding-block: 8px;
           color: white;
           font-weight: 500;
           text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
@@ -65,13 +67,14 @@ class RestaurantItem extends HTMLElement {
         .restaurant-item__subtitle {
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
+          align-items: center;
           text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
         }
 
         .restaurant-item__city {
           font-size: 14px;
           font-weight: 500;
+          margin-block: 0px;
         }
 
         .restaurant-item__rating {

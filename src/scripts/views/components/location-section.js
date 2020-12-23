@@ -51,7 +51,8 @@ class LocationSection extends HTMLElement {
           .location__content button {
             background: #2b50b4;
             color: white;
-            padding: 10px;
+            padding: 12px;
+            font-size: 18px;
             border-radius: 5px;
             border: none;
             transition: opacity 0.3s;
