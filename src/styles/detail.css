@@ -204,35 +204,6 @@
   }
 }
 
-.empty-detail {
-  height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.empty-detail__message {
-  font-size: 18px;
-  font-weight: 500;
-  color: #2c3e50;
-  padding: 0 32px;
-  text-align: center;
-}
-
-.empty-detail__image {
-  width: 100px;
-  height: auto;
-  margin-bottom: 16px;
-}
-
-.behind-appbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 60px;
-  background-color: #2c3e50;
-}
 
 .restaurant_detail__loading__wrapper {
   height: calc(100vh - 60px);

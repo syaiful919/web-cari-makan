@@ -7,6 +7,8 @@ import './components/fav-hero';
 import './components/taste-section';
 import './components/location-section';
 import './components/restaurant-item';
+import './components/empty-list';
+import './components/empty-detail';
 
 class App {
   constructor({

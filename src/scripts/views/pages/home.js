@@ -1,5 +1,5 @@
 import RestaurantSource from '../../data/restaurant-source';
-import { createEmptyList, createLoading } from '../templates/template-creator';
+import { createLoading } from '../templates/template-creator';
 
 const Home = {
   async render() {
@@ -30,7 +30,9 @@ const Home = {
       });
     } catch (e) {
       console.log('>>> error ', e);
-      restaurantsWrapper.innerHTML = createEmptyList();
+      restaurantsWrapper.removeChild(loading);
+      const emptyListElement = document.createElement('empty-list');
+      restaurantsWrapper.appendChild(emptyListElement);
     }
   },
 };

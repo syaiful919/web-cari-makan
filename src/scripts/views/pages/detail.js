@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 import RestaurantSource from '../../data/restaurant-source';
 import UrlParser from '../../routes/url-parser';
-import { createRestaurantDetailTemplate, createEmptyDetail, createLoading } from '../templates/template-creator';
+import { createRestaurantDetailTemplate, createLoading } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
@@ -59,7 +59,10 @@ const Detail = {
       }
     } catch (e) {
       console.log('>>> error ', e);
-      restaurantDetail.innerHTML = createEmptyDetail();
+      restaurantDetail.removeChild(loading);
+      const emptyDetailElement = document.createElement('empty-detail');
+      console.log(emptyDetailElement);
+      restaurantDetail.appendChild(emptyDetailElement);
     }
   },
 };

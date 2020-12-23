@@ -198,6 +198,11 @@ footer {
   box-shadow: 0px 0px 12px 5px rgba(209, 209, 209, 1);
 }
 
+empty-list{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 .empty-plate {
   width: 100%;
   height: auto;
@@ -222,27 +227,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.empty-list {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.empty-list__message {
-  font-size: 18px;
-  font-weight: 500;
-  color: #2c3e50;
-  padding: 0 32px;
-  text-align: center;
-}
-
-.empty-list__image {
-  width: 100px;
-  height: auto;
-  margin-bottom: 16px;
 }

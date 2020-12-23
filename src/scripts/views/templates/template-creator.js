@@ -105,18 +105,6 @@ const createEmptyFavTemplate = () => `
   
 `;
 
-const createEmptyDetail = () => `
-<div class="empty-detail">
-  <img 
-      class="empty-detail__image" 
-      src="images/attention.png"
-      alt="perhatian"
-    />
-  <p class="empty-detail__message">Terjadi kesalahan, coba beberapa saat lagi</p>
-</div>
-<div class="behind-appbar"></div>
-`;
-
 const createLoading = () => `
 <div class="loadingio-spinner-rolling-io">
   <div class="loading-io">
@@ -125,23 +113,10 @@ const createLoading = () => `
 </div>
 `;
 
-const createEmptyList = () => `
-<div class="empty-list">
-  <img 
-      class="empty-list__image" 
-      src="images/attention.png"
-      alt="perhatian"
-    />
-  <p class="empty-list__message">Terjadi kesalahan, coba beberapa saat lagi</p>
-</div>
-`;
-
 export {
   createRestaurantDetailTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
   createEmptyFavTemplate,
-  createEmptyDetail,
   createLoading,
-  createEmptyList,
 };
