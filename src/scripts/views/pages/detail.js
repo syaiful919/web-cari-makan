@@ -1,14 +1,14 @@
 /* eslint-disable no-alert */
 import RestaurantSource from '../../data/restaurant-source';
 import UrlParser from '../../routes/url-parser';
-import { createRestaurantDetailTemplate, createLoading } from '../templates/template-creator';
+import { createRestaurantDetailTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
     return `
     <div id="restaurantDetail">
-    <div class="restaurant_detail__loading__wrapper"></div>
+      <div class="restaurant_detail__loading__wrapper"></div>
     </div>
     <div id="likeButtonContainer"></div>
           `;
@@ -18,7 +18,8 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const restaurantDetail = document.querySelector('#restaurantDetail');
     const loading = document.querySelector('.restaurant_detail__loading__wrapper');
-    loading.innerHTML = createLoading();
+    const loadingElement = document.createElement('loading-circle');
+    loading.appendChild(loadingElement);
     try {
       const restaurant = await RestaurantSource.detailRestaurant(url.id);
       restaurantDetail.innerHTML = createRestaurantDetailTemplate(restaurant);
@@ -61,7 +62,6 @@ const Detail = {
       console.log('>>> error ', e);
       restaurantDetail.removeChild(loading);
       const emptyDetailElement = document.createElement('empty-detail');
-      console.log(emptyDetailElement);
       restaurantDetail.appendChild(emptyDetailElement);
     }
   },

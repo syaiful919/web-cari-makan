@@ -203,22 +203,10 @@ empty-list{
   grid-column-end: 3;
 }
 
-.empty-plate {
-  width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-.empty-fav {
+empty-fav {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-bottom: 64px;
-}
-
-.empty-fav__message {
-  font-size: 18px;
-  font-weight: 500;
-  color: #2c3e50;
 }
 
 .loading__wrapper {

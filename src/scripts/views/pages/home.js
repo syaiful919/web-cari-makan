@@ -1,5 +1,4 @@
 import RestaurantSource from '../../data/restaurant-source';
-import { createLoading } from '../templates/template-creator';
 
 const Home = {
   async render() {
@@ -19,7 +18,8 @@ const Home = {
   async afterRender() {
     const restaurantsWrapper = document.querySelector('#restaurantsWrapper');
     const loading = document.querySelector('.loading__wrapper');
-    loading.innerHTML = createLoading();
+    const loadingElement = document.createElement('loading-circle');
+    loading.appendChild(loadingElement);
     try {
       const restaurants = await RestaurantSource.restaurants();
       restaurantsWrapper.removeChild(loading);

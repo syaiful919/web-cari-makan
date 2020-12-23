@@ -7,16 +7,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .empty-fav {
+  .loading__wrapper {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
-  .empty-plate {
-    width: 50%;
-  }
-
-  .loading__wrapper {
+  
+  empty-fav {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -25,7 +21,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
 }
 
 @media screen and (max-width: 700px) {

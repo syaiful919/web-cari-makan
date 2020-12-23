@@ -93,30 +93,8 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-const createEmptyFavTemplate = () => `
-<div class="empty-fav">
-  <img 
-      class="empty-plate" 
-      src="images/plate.png"
-      alt="piring kosong"
-    />
-  <p class="empty-fav__message">Belum ada favorit</p>
-</div>
-  
-`;
-
-const createLoading = () => `
-<div class="loadingio-spinner-rolling-io">
-  <div class="loading-io">
-    <div></div>
-  </div>
-</div>
-`;
-
 export {
   createRestaurantDetailTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
-  createEmptyFavTemplate,
-  createLoading,
 };
