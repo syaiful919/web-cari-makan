@@ -181,7 +181,7 @@
 
 @media screen and (max-width: 900px) {
   .restaurant-detail__reviews {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 
@@ -239,4 +239,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.restaurant_detail__review-input{
+  text-align: end;
+  margin: 0 16px;
+}
+
+#reviewerName{
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #2b50b4;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+}
+
+#reviewContent{
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #2b50b4;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+}
+
+#reviewButton {
+  background: #2b50b4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: opacity 0.3s;
 }

@@ -71,7 +71,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>
   </div>`,
   ).join('')}
-      
+    </div>
+    <div id="reviewInput" class="restaurant_detail__review-input">
+      <input id="reviewerName" aria-label="Nama"  placeholder="Nama" type="text">
+      <textarea id="reviewContent" aria-label="Review"  placeholder="Tulis reviewmu disini"></textarea>
+      <button id="reviewButton">Kirim Review</button>
     </div>
   </article>
 </section>
