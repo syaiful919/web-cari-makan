@@ -55,7 +55,9 @@ class RestaurantItem extends HTMLElement {
         }
 
         .restaurant-item__title {
-          font-size: 22px;
+          min-width: 44px;
+          min-height: 44px;
+          font-size: 28px;
           display: block;
           padding-block: 8px;
           color: white;
