@@ -4,6 +4,7 @@ import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 import '../components/main-hero';
 import '../components/fav-hero';
+import '../components/taste-section';
 
 class App {
   constructor({

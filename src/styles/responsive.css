@@ -76,20 +76,7 @@
     grid-template-columns: 1fr;
   }
 
-  .taste__image,
-  .location__image {
-    display: none;
-  }
-
-  .taste__content,
-  .location__content {
-    text-align: center;
-  }
-
-  .taste__content button,
-  .location__content button {
-    margin: 0 auto;
-  }
+  
 }
 
 @media screen and (min-width: 600px) {
@@ -97,9 +84,7 @@
     display: none;
   }
 
-  #taste {
-    grid-template-columns: 7fr 5fr;
-  }
+  
 
   #location {
     grid-template-columns: 5fr 7fr;

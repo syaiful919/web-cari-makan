@@ -5,21 +5,7 @@ const Home = {
   async render() {
     return `
     <main-hero></main-hero>
-    <section id="taste">
-      <article class="taste__content">
-        <h2 class="section__title">Cita Rasa Nusantara</h2>
-        <p class="taste__tagline">
-          Nikmati beragam makanan dan minuman khas dari seluruh Nusantara.
-          Jelajahi sekarang juga
-        </p>
-        <button onclick="">Lihat Menu</button>
-      </article>
-      <img
-        class="taste__image"
-        src="images/food.png"
-        alt="Makanan nusantara"
-      />
-    </section>
+    <taste-section></taste-section>
     <section id="location">
       <img
         class="location__image"
