@@ -4,15 +4,7 @@ import { createEmptyList, createLoading, createRestaurantItemTemplate } from '..
 const Home = {
   async render() {
     return `
-    <section class="hero main-hero">
-      <div class="hero__inner">
-        <h1 class="hero__title">Laper?, Yuk Cari Makan</h1>
-        <p class="hero__tagline">
-          Jelajahi dan nikmati berbagai cita rasa kuliner di semua cabang kami
-          di seluruh Indonesia
-        </p>
-      </div>
-    </section>
+    <main-hero></main-hero>
     <section id="taste">
       <article class="taste__content">
         <h2 class="section__title">Cita Rasa Nusantara</h2>

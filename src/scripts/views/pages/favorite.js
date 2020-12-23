@@ -4,14 +4,7 @@ import { createLoading, createRestaurantItemTemplate, createEmptyFavTemplate } f
 const Favorite = {
   async render() {
     return `
-    <section class="hero fav-hero">
-      <div class="hero__inner">
-        <h1 class="hero__title">Tempat Makan Favoritmu</h1>
-        <p class="hero__tagline">
-          Disini kamu bisa melihat daftar tempat makan yang kamu simpan
-        </p>
-      </div>
-    </section>
+    <fav-hero></fav-hero>
     <section id="restaurants">
       <div id="restaurantsWrapper" class="restaurant__wrapper">
         <div class="loading__wrapper"></div>
