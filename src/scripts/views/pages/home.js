@@ -6,21 +6,7 @@ const Home = {
     return `
     <main-hero></main-hero>
     <taste-section></taste-section>
-    <section id="location">
-      <img
-        class="location__image"
-        src="images/city.png"
-        alt="Lokasi"
-      />
-      <article class="location__content">
-        <h2 class="section__title">Tersebar di Seluruh Indonesia</h2>
-        <p class="location__tagline">
-          Kami hadir di lebih dari 1000 kota di seluruh Indonesia. Jika anda
-          mencari kami, kami ada dimana-mana
-        </p>
-        <button onclick="">Lihat Kota</button>
-      </article>
-    </section>
+    <location-section></location-section>
     <section id="restaurants">
       <h2 class="section__title">Tempat Makan Populer</h2>
       <div id="restaurantsWrapper" class="restaurant__wrapper">

@@ -5,6 +5,7 @@ import routes from '../routes/routes';
 import '../components/main-hero';
 import '../components/fav-hero';
 import '../components/taste-section';
+import '../components/location-section';
 
 class App {
   constructor({

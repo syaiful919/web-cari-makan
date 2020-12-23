@@ -63,19 +63,16 @@ class TasteSection extends HTMLElement {
             font-size: 36px;
             margin: 0 auto 32px;
           }
-          
-          .taste__image,
-          .location__image {
+
+          .taste__image {
             display: none;
           }
 
-          .taste__content,
-          .location__content {
+          .taste__content {
             text-align: center;
           }
 
-          .taste__content button,
-          .location__content button {
+          .taste__content button {
             margin: 0 auto;
           }
         }

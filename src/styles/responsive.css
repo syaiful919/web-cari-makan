@@ -75,18 +75,10 @@
   .restaurant__wrapper {
     grid-template-columns: 1fr;
   }
-
-  
 }
 
 @media screen and (min-width: 600px) {
   .header__menu {
     display: none;
-  }
-
-  
-
-  #location {
-    grid-template-columns: 5fr 7fr;
   }
 }
