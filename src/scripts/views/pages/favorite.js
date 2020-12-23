@@ -1,5 +1,5 @@
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
-import { createLoading, createRestaurantItemTemplate, createEmptyFavTemplate } from '../templates/template-creator';
+import { createLoading, createEmptyFavTemplate } from '../templates/template-creator';
 
 const Favorite = {
   async render() {
@@ -23,7 +23,9 @@ const Favorite = {
     } else {
       restaurantsWrapper.removeChild(loading);
       restaurants.forEach((restaurant) => {
-        restaurantsWrapper.innerHTML += createRestaurantItemTemplate(restaurant);
+        const restaurantItemElement = document.createElement('restaurant-item');
+        restaurantItemElement.restaurant = restaurant;
+        restaurantsWrapper.appendChild(restaurantItemElement);
       });
     }
   },

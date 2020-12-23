@@ -6,6 +6,7 @@ import '../components/main-hero';
 import '../components/fav-hero';
 import '../components/taste-section';
 import '../components/location-section';
+import '../components/restaurant-item';
 
 class App {
   constructor({

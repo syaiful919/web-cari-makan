@@ -81,28 +81,6 @@ const createRestaurantDetailTemplate = (restaurant) => `
 </section>
 `;
 
-const createRestaurantItemTemplate = (restaurant) => `
-<article class="restaurant__item">
-  <div class="restaurant-item__thumbnail">
-    <img
-      src="${`${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}`}"
-      alt="${restaurant.name}"
-      crossorigin="anonymous"
-    />
-    <div class="restaurant-item__main">
-      <a href="${`/#/detail/${restaurant.id}`}" class="restaurant-item__title">${
-  restaurant.name
-}</a>
-      <div class="restaurant-item__subtitle">
-        <h3 class="restaurant-item__city">${restaurant.city}</h3>
-        <div class="restaurant-item__rating">⭐ ${restaurant.rating}</div>
-      </div>
-    </div>
-  </div>
-  <p class="restaurant-item__description">${restaurant.description}</p>
-</article>
-`;
-
 const createLikeButtonTemplate = () => `
   <button aria-label="tambah ke favorit" id="likeButton" class="like">
     <img width="24" height="24" src="svg/heart_border.svg" alt="tambah ke favorit"/>
@@ -160,7 +138,6 @@ const createEmptyList = () => `
 
 export {
   createRestaurantDetailTemplate,
-  createRestaurantItemTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
   createEmptyFavTemplate,

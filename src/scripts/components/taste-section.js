@@ -11,6 +11,11 @@ class TasteSection extends HTMLElement {
   render() {
     this.shadowDOM.innerHTML = `
        <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
         .section__title {
           color: #322f56;
           font-size: 48px;

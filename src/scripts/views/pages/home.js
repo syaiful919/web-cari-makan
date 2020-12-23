@@ -1,5 +1,5 @@
 import RestaurantSource from '../../data/restaurant-source';
-import { createEmptyList, createLoading, createRestaurantItemTemplate } from '../templates/template-creator';
+import { createEmptyList, createLoading } from '../templates/template-creator';
 
 const Home = {
   async render() {
@@ -24,7 +24,9 @@ const Home = {
       const restaurants = await RestaurantSource.restaurants();
       restaurantsWrapper.removeChild(loading);
       restaurants.forEach((restaurant) => {
-        restaurantsWrapper.innerHTML += createRestaurantItemTemplate(restaurant);
+        const restaurantItemElement = document.createElement('restaurant-item');
+        restaurantItemElement.restaurant = restaurant;
+        restaurantsWrapper.appendChild(restaurantItemElement);
       });
     } catch (e) {
       console.log('>>> error ', e);

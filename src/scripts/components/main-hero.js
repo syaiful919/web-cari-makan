@@ -11,6 +11,11 @@ class MainHero extends HTMLElement {
   render() {
     this.shadowDOM.innerHTML = `
        <style>
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
            
           .hero {
             display: flex;
