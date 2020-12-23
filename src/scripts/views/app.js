@@ -2,11 +2,11 @@ import DrawerInitiator from '../utils/drawer-initiator';
 import SkipLinkInitiator from '../utils/skip-link-initiator';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
-import '../components/main-hero';
-import '../components/fav-hero';
-import '../components/taste-section';
-import '../components/location-section';
-import '../components/restaurant-item';
+import './components/main-hero';
+import './components/fav-hero';
+import './components/taste-section';
+import './components/location-section';
+import './components/restaurant-item';
 
 class App {
   constructor({
