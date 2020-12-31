@@ -1,56 +1,25 @@
-import "regenerator-runtime"; /* for async await transpile */
-import "../styles/main.css";
-import "../styles/responsive.css";
+import 'regenerator-runtime'; /* for async await transpile */
+import '../styles/main.css';
+import '../styles/responsive.css';
+import '../styles/detail.css';
+import App from './views/app';
+import swRegister from './utils/sw-register';
 
-const menu = document.querySelector("#menu");
-const hero = document.querySelector(".hero");
-const main = document.querySelector("main");
-const drawer = document.querySelector("#drawer");
-const header = document.querySelector("header");
-const logo = document.querySelector(".logo");
-const navItem = document.querySelectorAll(".nav__item a");
-
-menu.addEventListener("click", function (event) {
-  drawer.classList.toggle("open");
-  navItem.forEach(function (x) {
-    x.style.color = "#2c3e50";
-  });
-  event.stopPropagation();
+const app = new App({
+  button: document.querySelector('#menu'),
+  drawer: document.querySelector('#drawer'),
+  drawerItems: document.querySelectorAll('.nav__item a'),
+  header: document.querySelector('header'),
+  logo: document.querySelector('.logo'),
+  content: document.querySelector('#mainContent'),
+  skipLink: document.querySelector('#skipLink'),
 });
 
-hero.addEventListener("click", function () {
-  drawer.classList.remove("open");
+window.addEventListener('hashchange', () => {
+  app.renderPage();
 });
 
-main.addEventListener("click", function () {
-  drawer.classList.remove("open");
+window.addEventListener('load', () => {
+  app.renderPage();
+  swRegister();
 });
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    header.style.backgroundColor = "white";
-    logo.style.color = "#2c3e50";
-    menu.style.color = "#2c3e50";
-    navItem.forEach(function (x) {
-      x.style.color = "#2c3e50";
-    });
-  } else {
-    header.style.backgroundColor = "transparent";
-    logo.style.color = "white";
-    menu.style.color = "white";
-    navItem.forEach(function (x) {
-      if (drawer.classList.contains("open") && window.screen.width < 600) {
-        x.style.color = "#2c3e50";
-      } else {
-        x.style.color = "white";
-      }
-    });
-  }
-}

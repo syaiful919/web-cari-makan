@@ -4,24 +4,31 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Web app katalog restoran sederhana">
-    <title>Cari Makan</title>
+    <meta name="Description" content="Web app katalog restoran sederhana" />
+    <meta name="theme-color" content="#2c3e50" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="manifest" href="manifest.json" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <title>Cari Makan</title>
   </head>
   <body>
-    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+    <a href="javascript:void(0)" id="skipLink" class="skip-link"
+      >Menuju ke konten</a
+    >
     <header>
       <div class="header__inner">
         <a href="#" class="logo">Cari Makan</a>
-        <a id="menu" href="javascript:void(0)" class="header__menu">☰</a>
+        <a id="menu" href="javascript:void(0)" class="header__menu" aria-label="navigation-menu">☰</a>
         <nav id="drawer" class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">Favorite</a></li>
+            <li class="nav__item"><a href="#/home">Home</a></li>
+            <li class="nav__item"><a href="#/favorite">Favorite</a></li>
             <li class="nav__item">
               <a
                 href="https://www.linkedin.com/in/syaiful-izzuddin-salam-b02895119/"
@@ -32,323 +39,9 @@
         </nav>
       </div>
     </header>
-    <div class="hero">
-      <div class="hero__inner">
-        <h1 class="hero__title">Laper?, Yuk Cari Makan</h1>
-        <p class="hero__tagline">
-          Jelajahi dan nikmati berbagai cita rasa kuliner di semua cabang kami
-          di seluruh Indonesia
-        </p>
-      </div>
-    </div>
-    <main id="maincontent">
-      <section id="taste">
-        <article class="taste__content">
-          <h2 class="section__title">Cita Rasa Nusantara</h2>
-          <p class="taste__tagline">
-            Nikmati beragam makanan dan minuman khas dari seluruh Nusantara.
-            Jelajahi sekarang juga
-          </p>
-          <button onclick="">Lihat Menu</button>
-        </article>
-        <img
-          class="taste__image"
-          src="images/food.png"
-          alt="Ilustrasi makanan Nusantara"
-        />
-      </section>
-      <section id="location">
-        <img
-          class="location__image"
-          src="images/city.png"
-          alt="Ilustrasi lokasi"
-        />
-        <article class="location__content">
-          <h2 class="section__title">Tersebar di Seluruh Indonesia</h2>
-          <p class="location__tagline">
-            Kami hadir di lebih dari 1000 kota di seluruh Indonesia. Jika anda
-            mencari kami, kami ada dimana-mana
-          </p>
-          <button onclick="">Lihat Kota</button>
-        </article>
-      </section>
-      <section id="restaurants">
-        <h2 class="section__title">Tempat Makan Populer</h2>
-        <div class="restaurant__wrapper">
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41"
-                alt="Bring Your Phone Cafe"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title"
-                  >Bring Your Phone Cafe</a
-                >
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Medan</h3>
-                  <div class="restaurant-item__rating">⭐ 4.6</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
 
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07"
-                alt="Run The Gun"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Run The Gun</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Bali</h3>
-                  <div class="restaurant-item__rating">⭐ 4.6</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29"
-                alt="Pangsit Express"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Pangsit Express</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Ternate</h3>
-                  <div class="restaurant-item__rating">⭐ 4.8</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/38"
-                alt="Ducky Duck"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Ducky Duck</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Malang</h3>
-                  <div class="restaurant-item__rating">⭐ 4.7</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40"
-                alt="Kafein"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Kafein</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Bali</h3>
-                  <div class="restaurant-item__rating">⭐ 3.8</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08"
-                alt="Makan mudah"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Makan mudah</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Malang</h3>
-                  <div class="restaurant-item__rating">⭐ 4.6</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32"
-                alt="Saya Suka"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Saya Suka</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Surabaya</h3>
-                  <div class="restaurant-item__rating">⭐ 3.6</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45"
-                alt="Gigitan Cepat"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Gigitan Cepat</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Aceh</h3>
-                  <div class="restaurant-item__rating">⭐ 4</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-
-          <article class="restaurant__item">
-            <div class="restaurant-item__thumbnail">
-              <img
-                src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04"
-                alt="Fairy Cafe"
-              />
-              <div class="restaurant-item__main">
-                <a href="" class="restaurant-item__title">Fairy Cafe</a>
-                <div class="restaurant-item__subtitle">
-                  <h3 class="restaurant-item__city">Malang</h3>
-                  <div class="restaurant-item__rating">⭐ 3.9</div>
-                </div>
-              </div>
-            </div>
-            <p class="restaurant-item__description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet.
-            </p>
-          </article>
-        </div>
-      </section>
-    </main>
+    <main id="mainContent"></main>
+    
     <footer>Copyright © 2020 - Cari Makan by Syaiful</footer>
   </body>
 </html>

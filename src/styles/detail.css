@@ -1,0 +1,254 @@
+.restaurant-detail-main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.restaurant-detail__image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -4;
+}
+.restaurant-detail-main__description {
+  color: white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.restaurant-detail-main__mask {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 0.5228466386554622) 0%,
+    rgba(9, 9, 121, 0) 80%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+.restaurant-detail-main__mask-up {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -3;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0.6573004201680672) 0%,
+    rgba(9, 9, 121, 0) 37%
+  );
+}
+.restaurant-detail-main__title {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  font-size: 68px;
+  margin: 0 16px 32px 16px;
+}
+.restaurant-detail-main__subtitle {
+  color: white;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.restaurant-detail__rating {
+  font-size: 48px;
+}
+.rating__checked {
+  color: orange;
+}
+
+.restaurant-detail__wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 32px auto 32px auto;
+}
+
+.restaurant-detail__section-title {
+  color: #322f56;
+  font-size: 48px;
+  font-weight: 500;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.restaurant-detail__about {
+  margin: 0 16px 32px;
+  font-size: 14px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.restaurant-detail__menus {
+  display: grid;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
+}
+
+.restaurant-detail__menus > .restaurant-detail__section-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.restaurant-detail__menu {
+  padding: 0 16px;
+  margin: 0 16px;
+}
+
+.restaurant-detail__menu-title {
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #322f56;
+  text-align: center;
+}
+
+.restaurant-detail__menu-list {
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.restaurant-detail__reviews {
+  display: grid;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.restaurant-detail__reviews > .restaurant-detail__section-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.restaurant-detail__review-list {
+  display: flex;
+  margin: 16px;
+}
+
+.restaurant-detail__review-list__avatar {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background: salmon;
+}
+
+.restaurant-detail__review-list:nth-child(2n + 1)
+  > .restaurant-detail__review-list__avatar {
+  background: skyblue;
+}
+
+.restaurant-detail__review-list:nth-child(3n + 1)
+  > .restaurant-detail__review-list__avatar {
+  background: seagreen;
+}
+
+.restaurant-detail__review-list__name {
+  color: #322f56;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.restaurant-detail__review-list__date {
+  color: grey;
+  font-size: 12px;
+}
+
+.restaurant-detail__review-list__content {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.restaurant-detail__review-list__review {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .restaurant-detail__reviews {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .restaurant-detail-main__title {
+    font-size: 48px;
+  }
+  .restaurant-detail-main__subtitle {
+    font-size: 18px;
+  }
+  .restaurant-detail__rating {
+    font-size: 32px;
+  }
+  .restaurant-detail__menus {
+    grid-template-columns: 1fr;
+  }
+  .restaurant-detail__menus > .restaurant-detail__section-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+
+.restaurant_detail__loading__wrapper {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant_detail__review-input{
+  text-align: end;
+  margin: 0 16px;
+}
+
+#reviewerName{
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #2b50b4;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+}
+
+#reviewContent{
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #2b50b4;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+}
+
+#reviewButton {
+  background: #2b50b4;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  transition: opacity 0.3s;
+}
