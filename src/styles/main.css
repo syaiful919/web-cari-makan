@@ -194,9 +194,9 @@ footer {
   border: white;
   /* outline: none; */
 
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(209, 209, 209, 1);
-  -moz-box-shadow: 0px 0px 12px 5px rgba(209, 209, 209, 1);
-  box-shadow: 0px 0px 12px 5px rgba(209, 209, 209, 1);
+  -webkit-box-shadow: 0 0 12px 5px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 0 0 12px 5px rgba(209, 209, 209, 1);
+  box-shadow: 0 0 12px 5px rgba(209, 209, 209, 1);
 }
 
 empty-list{
