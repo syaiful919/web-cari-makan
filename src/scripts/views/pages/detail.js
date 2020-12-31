@@ -28,6 +28,7 @@ const Detail = {
 
       LikeButtonPresenter.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        favoriteRestaurants: FavoriteRestaurantIdb,
         restaurant: {
           id: restaurant.id,
           name: restaurant.name,
@@ -36,7 +37,6 @@ const Detail = {
           pictureId: restaurant.pictureId,
           rating: restaurant.rating,
         },
-        favoriteRestaurant: FavoriteRestaurantIdb,
       });
 
       const reviewForm = document.querySelector('#reviewInput');

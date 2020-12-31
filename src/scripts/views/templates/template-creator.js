@@ -81,13 +81,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
 </section>
 `;
 
-const createLikeButtonTemplate = () => `
+const createLikeRestaurantButtonTemplate = () => `
   <button aria-label="tambah ke favorit" id="likeButton" class="like">
     <img width="24" height="24" src="svg/heart_border.svg" alt="tambah ke favorit"/>
   </button>
 `;
 
-const createLikedButtonTemplate = () => `
+const createUnlikeRestaurantButtonTemplate = () => `
   <button aria-label="hapus dari favorit" id="likeButton" class="like">
     <img width="24" height="24" src="svg/heart.svg" alt="hapus dari favorit"/>
   </button>
@@ -95,6 +95,6 @@ const createLikedButtonTemplate = () => `
 
 export {
   createRestaurantDetailTemplate,
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createLikeRestaurantButtonTemplate,
+  createUnlikeRestaurantButtonTemplate,
 };
