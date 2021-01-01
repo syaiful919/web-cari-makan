@@ -30,7 +30,7 @@ class MainHero extends HTMLElement {
           }
 
           .main-hero {
-            background-image: url("images/main_hero.jpg");
+            background-image: url("images/heros/main_hero.jpg");
           }
 
           .hero__inner {
@@ -55,9 +55,18 @@ class MainHero extends HTMLElement {
             font-weight: 300;
           }
 
+          @media screen and (max-width: 999px) {
+            .main-hero {
+              background-image: url("images/heros/generated/main_hero-medium.jpg");
+            }
+          }
+
           @media screen and (max-width: 599px) {
             .hero__title {
               font-size: 36px;
+            }
+            .main-hero {
+              background-image: url("images/heros/generated/main_hero-small.jpg");
             }
           }
        </style>

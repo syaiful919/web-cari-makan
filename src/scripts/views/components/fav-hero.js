@@ -30,7 +30,7 @@ class FavHero extends HTMLElement {
             }
   
             .fav-hero {
-              background-image: url("images/fav_hero.jpg");
+              background-image: url("images/heros/fav_hero.jpg");
             }
   
             .hero__inner {
@@ -55,9 +55,18 @@ class FavHero extends HTMLElement {
               font-weight: 300;
             }
 
+            @media screen and (max-width: 999px) {
+              .fav-hero {
+                background-image: url("images/heros/generated/fav_hero-medium.jpg");
+              }
+            }
+
             @media screen and (max-width: 599px) {
               .hero__title {
                 font-size: 36px;
+              }
+              .fav-hero {
+                background-image: url("images/heros/generated/fav_hero-small.jpg");
               }
             }
          </style>

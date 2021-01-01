@@ -42,12 +42,18 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
+          globOptions: {
+            ignore: ['**/images/heros/generated/**'], // to prevent compress generated hero images
+          },
         },
       ],
     }),
     new ServiceWorkerWebpackPlugin({
       entry: path.resolve(__dirname, 'src/scripts/sw.js'),
     }),
+    // after generate small/medium image from original hero images via sharp,
+    // if we want to delete dist folder, copy generated images to original path,
+    // so we can use in development mode in mobile/tablet view
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
