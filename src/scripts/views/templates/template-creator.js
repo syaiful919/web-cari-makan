@@ -3,10 +3,10 @@ import CONFIG from '../../globals/config';
 const createRestaurantDetailTemplate = (restaurant) => `
 <section class="restaurant-detail-main">
   <img
-  src="${`${CONFIG.BASE_IMAGE_URL}/large/${restaurant.pictureId}`}"
+  data-src="${`${CONFIG.BASE_IMAGE_URL}/large/${restaurant.pictureId}`}"
   alt="${restaurant.name}"
   crossorigin="anonymous"
-  class="restaurant-detail__image"
+  class="restaurant-detail__image lazyload"
 />
 <div class="restaurant-detail-main__mask-up"></div>
 <div class="restaurant-detail-main__mask"></div>
@@ -83,13 +83,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createLikeRestaurantButtonTemplate = () => `
   <button aria-label="tambah ke favorit" id="likeButton" class="like">
-    <img width="24" height="24" src="svg/heart_border.svg" alt="tambah ke favorit"/>
+    <img width="24" height="24" data-src="svg/heart_border.svg" class="lazyload" alt="tambah ke favorit"/>
   </button>
 `;
 
 const createUnlikeRestaurantButtonTemplate = () => `
   <button aria-label="hapus dari favorit" id="likeButton" class="like">
-    <img width="24" height="24" src="svg/heart.svg" alt="hapus dari favorit"/>
+    <img width="24" height="24" data-src="svg/heart.svg" class="lazyload" alt="hapus dari favorit"/>
   </button>
 `;
 
@@ -97,7 +97,8 @@ const createRestaurantItemTemplate = (restaurant) => `
 <article class="restaurant__item">
   <div class="restaurant-item__thumbnail">
     <img
-      src="${`${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}`}"
+      class="lazyload"
+      data-src="${`${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}`}"
       alt="${restaurant.name}"
       crossorigin="anonymous"
     />
